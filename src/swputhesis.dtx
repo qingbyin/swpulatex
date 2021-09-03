@@ -466,9 +466,9 @@
 \newcommand{\swpu@zhinfoformat}[3]{%
 % 注意 parbox 必须指定 contentpos，否则会出现并排的 box 错位的现象。
     \parbox[#1][#2][c]{12cm}{%
-        \color[rgb]{0,0.424,0.647}\zihao{4}\ziju{0.3}\sffamily%
+        \zihao{4}\ziju{0.3}\sffamily%
         \linespread{1.7}\selectfont
-    \CJKunderline[thickness=1bp]{#3 \hfill}}%
+    \CJKunderline[thickness=1bp, format=\color[rgb]{0,0.424,0.647}, textformat=\color[rgb]{0,0.424,0.647}]{#3 \hfill}}%
 }
 %    \end{macrocode}
 %\end{macro}
