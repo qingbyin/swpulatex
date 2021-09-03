@@ -215,6 +215,7 @@
 %
 %    \begin{macrocode}
 \RequirePackage{newtxmath} % 用于单独设置公式使用Times New Roman字体
+\RequirePackage{xeCJKfntef} % 用于实现汉字下划线和盒子内两段对齐
 \RequirePackage{fancyhdr} % 用于设置页眉页脚
 \RequirePackage{geometry} % 用于设置页面大小、边距
 \RequirePackage{pifont} % 实现脚注编号使用漂亮的带圈数字符号
@@ -437,7 +438,7 @@
 % ^^A --------------------------------------------------------------------------
 % 定义封面的字体样式。
 %
-% \begin{macro}{\swpu@zhcoverformat}
+%\begin{macro}{\swpu@zhcoverformat}
 % 论文信息表标题栏：黑体 (英文Arial)， 小三。
 %    \begin{macrocode}
 \newcommand{\swpu@zhcoverformat}[3]{%
@@ -447,9 +448,9 @@
 	\makebox[3.2cm][s]{#3 ：}}
 }
 %    \end{macrocode}
-%	\end{macro}
+%\end{macro}
 %
-% \begin{macro}{\swpu@zhinfoformat}
+%\begin{macro}{\swpu@zhinfoformat}
 % 论文信息表用户填写内容：黑体 (英文Arial)，四号 (14 bp)，左对齐，字符间距加宽 3 bp,
 % 因为 ctex 宏包字符间距使用的字号的倍数，因此需要换算为倍数 3 / 14 = 0.21。
 % 但可能是因为 ctex 定义中文间距是前一个汉字右边缘到后一个汉字左边缘距离，
